@@ -1,0 +1,22 @@
+/* filepath: d:\Learning\learning_ai\portfolio_site\style.css */
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Arial;line-height:1.5;color:#222;margin:0;background:#f7fafc}
+.container{width:92%;max-width:1100px;margin:0 auto}
+.site-header{background:linear-gradient(90deg,#0f172a,#0b1220);color:#fff;position:sticky;top:0;z-index:10}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
+.brand h1{margin:0;font-size:1.25rem}
+.brand .tagline{margin:0;font-size:0.85rem;color:#aab3c4}
+.site-nav a{color:#e6eef8;text-decoration:none;margin-left:1.25rem;font-weight:600}
+.nav-toggle{display:none;background:none;border:none;color:#fff;font-size:1.4rem}
+.section{padding:2rem 0;border-bottom:1px solid #eef2f7;background:transparent}
+.projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:1rem}
+.project-card{padding:1rem;border-radius:8px;background:#fff;box-shadow:0 6px 18px rgba(12,20,30,.06)}
+.site-footer{background:#071226;color:#9fb0c8;text-align:center;padding:1rem 0;margin-top:2rem}
+
+/* Responsive */
+@media (max-width:900px){
+  .site-nav{display:none;width:100%;flex-direction:column;margin-top:.6rem}
+  .site-nav.show{display:flex}
+  .nav-toggle{display:block}
+  .projects-grid{grid-template-columns:1fr}
+}
